@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E18F3FF6-3D60-4B5D-861D-0FAFFB1E72D8}</ProjectGuid>
+    <RootNamespace>OC</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.24720.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Debug/OC.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\lib\OCD.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\Release/OC.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\lib\OCR.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\O3D\O3DFunctions.cpp" />
+    <ClCompile Include="..\O3D\O3DModel.cpp" />
+    <ClCompile Include="..\O3D\O3DMyPlyModel.cpp" />
+    <ClCompile Include="..\O3D\O3DPlyModel.cpp" />
+    <ClCompile Include="..\O3D\O3DRenderer.cpp" />
+    <ClCompile Include="..\O3D\O3DShadowedModel.cpp" />
+    <ClCompile Include="..\OCM\OCMFunctions.cpp" />
+    <ClCompile Include="..\OCV\OCVBufferND.cpp" />
+    <ClCompile Include="..\OCV\OCVImage.cpp" />
+    <ClCompile Include="..\OCV\OCVImageND.cpp" />
+    <ClCompile Include="..\OCV\OCVMatrix.cpp" />
+    <ClCompile Include="..\OFI\OFICovFeatureImage.cpp" />
+    <ClCompile Include="..\OFI\OFIHstFeatureImage.cpp" />
+    <ClCompile Include="..\OFI\OFIICovFeatureImage.cpp" />
+    <ClCompile Include="..\OFI\OFIIGWCovFeatureImage.cpp" />
+    <ClCompile Include="..\OFI\OFIIHstFeatureImage.cpp" />
+    <ClCompile Include="..\OFI\OFIImageFilter.cpp" />
+    <ClCompile Include="..\OFI\OFIIMgntHstFeatureImage.cpp" />
+    <ClCompile Include="..\OFI\OFIMCovFeatureImage.cpp" />
+    <ClCompile Include="..\OFI\OFIMgntHstFeatureImage.cpp" />
+    <ClCompile Include="..\OII\OIIFOIntegralImage.cpp" />
+    <ClCompile Include="..\OII\OIIIntegralHistogram.cpp" />
+    <ClCompile Include="..\OII\OIIIntegralImage.cpp" />
+    <ClCompile Include="..\OII\OIIIntegralMgntHistogram.cpp" />
+    <ClCompile Include="..\OII\OIISOIntegralImage.cpp" />
+    <ClCompile Include="..\OIP\OIPImageProcessing.cpp" />
+    <ClCompile Include="..\OLA\OLAFunctions.cpp" />
+    <ClCompile Include="..\OLA\OLALinearAlgebra.cpp" />
+    <ClCompile Include="..\OLA\OLAMatrix.cpp" />
+    <ClCompile Include="..\OLA\OLAVector.cpp" />
+    <ClCompile Include="..\OML\OMLBoostedClassifier.cpp" />
+    <ClCompile Include="..\Oml\OMLDecisionStump.cpp" />
+    <ClCompile Include="..\Oml\OMLDecisionStumpPW.cpp" />
+    <ClCompile Include="..\OML\OMLLDAClassifier.cpp" />
+    <ClCompile Include="..\OML\OMLLinearClassifier.cpp" />
+    <ClCompile Include="..\OML\OMLLinearMethods.cpp" />
+    <ClCompile Include="..\OML\OMLLinearRegression.cpp" />
+    <ClCompile Include="..\OML\OMLLSClassifier.cpp" />
+    <ClCompile Include="..\OML\OMLLSRegression.cpp" />
+    <ClCompile Include="..\Oml\OMLMultiLinearRegression.cpp" />
+    <ClCompile Include="..\Oml\OMLMultiLSRegression.cpp" />
+    <ClCompile Include="..\OML\OMLMultiRidgeRegression.cpp" />
+    <ClCompile Include="..\OML\OMLNNMethods.cpp" />
+    <ClCompile Include="..\OML\OMLRegressionStump.cpp" />
+    <ClCompile Include="..\OMS\OMSMeanShift.cpp" />
+    <ClCompile Include="..\OST\OSTFunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\O3D\O3DFunctions.h" />
+    <ClInclude Include="..\O3D\O3DModel.h" />
+    <ClInclude Include="..\O3D\O3DMyPlyModel.h" />
+    <ClInclude Include="..\O3D\O3DPlyModel.h" />
+    <ClInclude Include="..\O3D\O3DRenderer.h" />
+    <ClInclude Include="..\O3D\O3DShadowedModel.h" />
+    <ClInclude Include="..\OCM\OCMFunctions.h" />
+    <ClInclude Include="..\OCV\OCVBufferND.h" />
+    <ClInclude Include="..\OCV\OCVImage.h" />
+    <ClInclude Include="..\OCV\OCVImageND.h" />
+    <ClInclude Include="..\OCV\OCVMatrix.h" />
+    <ClInclude Include="..\OFI\OFICovFeatureImage.h" />
+    <ClInclude Include="..\OFI\OFIHstFeatureImage.h" />
+    <ClInclude Include="..\OFI\OFIICovFeatureImage.h" />
+    <ClInclude Include="..\OFI\OFIIGWCovFeatureImage.h" />
+    <ClInclude Include="..\OFI\OFIIHstFeatureImage.h" />
+    <ClInclude Include="..\OFI\OFIImageFilter.h" />
+    <ClInclude Include="..\OFI\OFIIMgntHstFeatureImage.h" />
+    <ClInclude Include="..\OFI\OFIMCovFeatureImage.h" />
+    <ClInclude Include="..\OFI\OFIMgntHstFeatureImage.h" />
+    <ClInclude Include="..\OII\OIIFOIntegralImage.h" />
+    <ClInclude Include="..\OII\OIIIntegralHistogram.h" />
+    <ClInclude Include="..\OII\OIIIntegralImage.h" />
+    <ClInclude Include="..\OII\OIIIntegralMgntHistogram.h" />
+    <ClInclude Include="..\OII\OIISOIntegralImage.h" />
+    <ClInclude Include="..\OIP\OIPImageProcessing.h" />
+    <ClInclude Include="..\OLA\OLAFunctions.h" />
+    <ClInclude Include="..\OLA\OLALinearAlgebra.h" />
+    <ClInclude Include="..\OLA\OLAMatrix.h" />
+    <ClInclude Include="..\OLA\OLAVector.h" />
+    <ClInclude Include="..\OML\OMLBoostedClassifier.h" />
+    <ClInclude Include="..\Oml\OMLDecisionStump.h" />
+    <ClInclude Include="..\Oml\OMLDecisionStumpPW.h" />
+    <ClInclude Include="..\OML\OMLLDAClassifier.h" />
+    <ClInclude Include="..\OML\OMLLinearClassifier.h" />
+    <ClInclude Include="..\OML\OMLLinearMethods.h" />
+    <ClInclude Include="..\OML\OMLLinearRegression.h" />
+    <ClInclude Include="..\OML\OMLLSClassifier.h" />
+    <ClInclude Include="..\OML\OMLLSRegression.h" />
+    <ClInclude Include="..\Oml\OMLMultiLinearRegression.h" />
+    <ClInclude Include="..\Oml\OMLMultiLSRegression.h" />
+    <ClInclude Include="..\OML\OMLMultiRidgeRegression.h" />
+    <ClInclude Include="..\OML\OMLNNMethods.h" />
+    <ClInclude Include="..\OML\OMLRegressionStump.h" />
+    <ClInclude Include="..\OMS\OMSMeanShift.h" />
+    <ClInclude Include="..\OST\OSTFunctions.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="OCM">
+      <UniqueIdentifier>{f4f205e1-0754-4a02-b4cf-351d2690e8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OCV">
+      <UniqueIdentifier>{e4939c26-749d-4c13-b235-0be7e695f51f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OLA">
+      <UniqueIdentifier>{912be372-97b1-4e4b-8453-832ab264208e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OML">
+      <UniqueIdentifier>{530fa69d-f24c-48a3-b855-4b685f962bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OMS">
+      <UniqueIdentifier>{92ed1f4f-8eef-4c47-886c-0ad9d24d009c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OII">
+      <UniqueIdentifier>{da2f412c-0580-416a-8613-29e8a7dd5ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OFI">
+      <UniqueIdentifier>{d9592865-a63b-43b2-b0f2-7ca1efe27b26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OIP">
+      <UniqueIdentifier>{8f54b6b4-34d1-4d8d-a1f0-a2163cc67f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OST">
+      <UniqueIdentifier>{33c32aa1-6b75-464e-bd43-bedd736e1279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="O3D">
+      <UniqueIdentifier>{90b45a00-eb2c-4dfb-b3f4-40d3630c15fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\OCM\OCMFunctions.cpp">
+      <Filter>OCM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OCV\OCVBufferND.cpp">
+      <Filter>OCV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OCV\OCVImage.cpp">
+      <Filter>OCV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OCV\OCVImageND.cpp">
+      <Filter>OCV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OCV\OCVMatrix.cpp">
+      <Filter>OCV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OLA\OLAFunctions.cpp">
+      <Filter>OLA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OLA\OLALinearAlgebra.cpp">
+      <Filter>OLA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OLA\OLAMatrix.cpp">
+      <Filter>OLA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OLA\OLAVector.cpp">
+      <Filter>OLA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OML\OMLBoostedClassifier.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Oml\OMLDecisionStump.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Oml\OMLDecisionStumpPW.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OML\OMLLDAClassifier.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OML\OMLLinearClassifier.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OML\OMLLinearMethods.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OML\OMLLinearRegression.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OML\OMLLSClassifier.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OML\OMLLSRegression.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Oml\OMLMultiLinearRegression.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Oml\OMLMultiLSRegression.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OML\OMLMultiRidgeRegression.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OML\OMLNNMethods.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OML\OMLRegressionStump.cpp">
+      <Filter>OML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OMS\OMSMeanShift.cpp">
+      <Filter>OMS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OII\OIIFOIntegralImage.cpp">
+      <Filter>OII</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OII\OIIIntegralHistogram.cpp">
+      <Filter>OII</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OII\OIIIntegralImage.cpp">
+      <Filter>OII</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OII\OIIIntegralMgntHistogram.cpp">
+      <Filter>OII</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OII\OIISOIntegralImage.cpp">
+      <Filter>OII</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OFI\OFICovFeatureImage.cpp">
+      <Filter>OFI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OFI\OFIHstFeatureImage.cpp">
+      <Filter>OFI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OFI\OFIICovFeatureImage.cpp">
+      <Filter>OFI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OFI\OFIIGWCovFeatureImage.cpp">
+      <Filter>OFI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OFI\OFIIHstFeatureImage.cpp">
+      <Filter>OFI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OFI\OFIImageFilter.cpp">
+      <Filter>OFI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OFI\OFIIMgntHstFeatureImage.cpp">
+      <Filter>OFI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OFI\OFIMCovFeatureImage.cpp">
+      <Filter>OFI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OFI\OFIMgntHstFeatureImage.cpp">
+      <Filter>OFI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OIP\OIPImageProcessing.cpp">
+      <Filter>OIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OST\OSTFunctions.cpp">
+      <Filter>OST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\O3D\O3DFunctions.cpp">
+      <Filter>O3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\O3D\O3DModel.cpp">
+      <Filter>O3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\O3D\O3DMyPlyModel.cpp">
+      <Filter>O3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\O3D\O3DPlyModel.cpp">
+      <Filter>O3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\O3D\O3DRenderer.cpp">
+      <Filter>O3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\O3D\O3DShadowedModel.cpp">
+      <Filter>O3D</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\OCM\OCMFunctions.h">
+      <Filter>OCM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OCV\OCVBufferND.h">
+      <Filter>OCV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OCV\OCVImage.h">
+      <Filter>OCV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OCV\OCVImageND.h">
+      <Filter>OCV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OCV\OCVMatrix.h">
+      <Filter>OCV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OLA\OLAFunctions.h">
+      <Filter>OLA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OLA\OLALinearAlgebra.h">
+      <Filter>OLA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OLA\OLAMatrix.h">
+      <Filter>OLA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OLA\OLAVector.h">
+      <Filter>OLA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OML\OMLBoostedClassifier.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Oml\OMLDecisionStump.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Oml\OMLDecisionStumpPW.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OML\OMLLDAClassifier.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OML\OMLLinearClassifier.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OML\OMLLinearMethods.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OML\OMLLinearRegression.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OML\OMLLSClassifier.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OML\OMLLSRegression.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Oml\OMLMultiLinearRegression.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Oml\OMLMultiLSRegression.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OML\OMLMultiRidgeRegression.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OML\OMLNNMethods.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OML\OMLRegressionStump.h">
+      <Filter>OML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OMS\OMSMeanShift.h">
+      <Filter>OMS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OII\OIIFOIntegralImage.h">
+      <Filter>OII</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OII\OIIIntegralHistogram.h">
+      <Filter>OII</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OII\OIIIntegralImage.h">
+      <Filter>OII</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OII\OIIIntegralMgntHistogram.h">
+      <Filter>OII</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OII\OIISOIntegralImage.h">
+      <Filter>OII</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OFI\OFICovFeatureImage.h">
+      <Filter>OFI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OFI\OFIHstFeatureImage.h">
+      <Filter>OFI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OFI\OFIICovFeatureImage.h">
+      <Filter>OFI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OFI\OFIIGWCovFeatureImage.h">
+      <Filter>OFI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OFI\OFIIHstFeatureImage.h">
+      <Filter>OFI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OFI\OFIImageFilter.h">
+      <Filter>OFI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OFI\OFIIMgntHstFeatureImage.h">
+      <Filter>OFI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OFI\OFIMCovFeatureImage.h">
+      <Filter>OFI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OFI\OFIMgntHstFeatureImage.h">
+      <Filter>OFI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OIP\OIPImageProcessing.h">
+      <Filter>OIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OST\OSTFunctions.h">
+      <Filter>OST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\O3D\O3DFunctions.h">
+      <Filter>O3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\O3D\O3DModel.h">
+      <Filter>O3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\O3D\O3DMyPlyModel.h">
+      <Filter>O3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\O3D\O3DPlyModel.h">
+      <Filter>O3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\O3D\O3DRenderer.h">
+      <Filter>O3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\O3D\O3DShadowedModel.h">
+      <Filter>O3D</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
